@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login.MainPage"
+             >
+
+    <StackLayout>
+        <Frame BackgroundColor="#FF0000" Padding="24" CornerRadius="0">
+            <Label Text="Login" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Entry x:Name="entryName" Placeholder="Zadej uživatelské jméno"/>
+        <Entry x:Name="entryPassword" Placeholder="Zadej heslo" IsPassword="True"/>
+        <Button x:Name="buttonLogin" Text="Přihlásit"/>
+    </StackLayout>
+
+</ContentPage>

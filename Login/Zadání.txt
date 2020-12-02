@@ -1,0 +1,16 @@
+Login
+____________________________________________________________
+Termín: zítra 23:59
+____________________________________________________________
+Pokyny
+____________________________________________________________
+Navrhněte mobilní aplikaci s formulářem pro přihlášení uživatele. Aplikace umožní přihlášení uživatele jménem a heslem.
+____________________________________________________________
+Pokud heslo splňuje podmínku, že je delší než 8 znaků, obsahuje alespoň jednu číslici a jeden speciální znak, 
+aplikace přejde na další formulář, ve kterém bude oslovení uživatele jeho uživatelským jménem.
+____________________________________________________________
+Pokud uživatel zadá neplatné heslo, aplikace na to uživatele upozorní pop-up dialogem s chybovým hlášením
+(např. heslo musí obsahovat min. 8 znaků, nebo že heslo musí obsahovat speciální znak) a nechá uživatele zadat heslo znovu.
+____________________________________________________________
+Pokud heslo odpovídá pravidlům a je vyplněné jméno, otevřete další formulář, ve kterém vypíšete hodnoty zadané  při přihlašování.
+____________________________________________________________
