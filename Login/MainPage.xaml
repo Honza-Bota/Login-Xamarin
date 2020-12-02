@@ -5,12 +5,17 @@
              >
 
     <StackLayout>
-        <Frame BackgroundColor="#FF0000" Padding="24" CornerRadius="0">
-            <Label Text="Login" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Frame x:Name="Title" BackgroundColor="#0A00FF" Padding="24" CornerRadius="0">
+            <Label Text="Login" HorizontalTextAlignment="Center" TextColor="White" FontSize="40" FontAttributes="Bold" />
         </Frame>
-        <Entry x:Name="entryName" Placeholder="Zadej uživatelské jméno"/>
-        <Entry x:Name="entryPassword" Placeholder="Zadej heslo" IsPassword="True"/>
-        <Button x:Name="buttonLogin" Text="Přihlásit"/>
+        <Frame Margin="20">
+            <StackLayout>
+                <Image Source="https://image.flaticon.com/icons/png/512/295/295128.png" Margin="10,20,10,20"/>
+                <Entry x:Name="entryName" Placeholder="Zadej uživatelské jméno" TextColor="Black" FontSize="20" PlaceholderColor="Gray" BackgroundColor="#F7F7F7"/>
+                <Entry x:Name="entryPassword" Placeholder="Zadej heslo" IsPassword="True" TextColor="Black" FontSize="20" PlaceholderColor="Gray" BackgroundColor="#F7F7F7"/>
+                <Button x:Name="buttonLogin" Text="Přihlásit" Background="green" Clicked="buttonLogin_Clicked"/>
+            </StackLayout>
+        </Frame>
     </StackLayout>
 
 </ContentPage>
