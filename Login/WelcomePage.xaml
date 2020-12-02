@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login.WelcomePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame>
+                <Label Text="Vítej uživateli" HorizontalTextAlignment="Center" Margin="30" FontSize="40" TextColor="Black" FontAttributes="Bold"/>
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Column="0">
+                    <Label Margin="20"> ~ Uživatelské jméno:</Label>
+                    <Label Margin="20"> ~ Uživatelské heslo:</Label>
+                </StackLayout>
+                <StackLayout Grid.Column="1">
+                    <Label Margin="20" Text="{Binding Name}" />
+                    <Label Margin="20" Text="{Binding Password}"/>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
