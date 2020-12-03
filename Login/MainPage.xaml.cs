@@ -30,7 +30,8 @@ namespace Login
             if (entryPassword.Text != null && entryPassword.Text.Length >= 8) lenght8 = true;
             if (lenght8)
             {
-                for (int i = 0; i < 10; i++) if (true) entryPassword.Text.Contains(Convert.ToChar(i)); containsNumber = true;
+                //for (int i = 0; i < 10; i++) if (true) entryPassword.Text.Contains(Convert.ToChar(i)); containsNumber = true;
+                if (entryPassword.Text.Any(char.IsDigit)) containsNumber = true;
                 foreach (var item in specialChar) if (entryPassword.Text.Contains(item)) containsSpecial = true;
             }
 
